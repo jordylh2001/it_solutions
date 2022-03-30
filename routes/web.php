@@ -30,6 +30,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+<<<<<<< Updated upstream
 Route::get('/users',[UserController::class,'index']);
 
 Route::resource('anuncios', AnunciosController::class);
@@ -48,3 +49,11 @@ Route::resource('riesgos', RiesgosController::class);
 Route::get('/configuracion', function () {
     return view('Configuracion.index');
 });
+=======
+
+Route::get('/Contacts', function () {
+    return view('contacts');
+});
+
+Route::get('/users',[UserController::class,'index']);
+>>>>>>> Stashed changes
